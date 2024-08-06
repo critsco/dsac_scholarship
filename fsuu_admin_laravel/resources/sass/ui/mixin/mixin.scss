@@ -1,0 +1,82 @@
+@mixin atxxl {
+    @media (min-width: 1600px) {
+        @content;
+    }
+}
+@mixin atxlMinMax {
+    @media (min-width: 1200px) and (max-width: 1599px) {
+        @content;
+    }
+}
+
+@mixin atxl {
+    @media (max-width: 1599px) {
+        @content;
+    }
+}
+
+@mixin atlgMinMax {
+    @media (min-width: 992px) and (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin atlg {
+    @media (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin atmdMinMax {
+    @media (min-width: 768px) and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin atmd {
+    @media (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin atsmMinMax {
+    @media (min-width: 576px) and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin atsm {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin atxs {
+    @media (max-width: 575px) {
+        @content;
+    }
+}
+
+@mixin atxs480 {
+    @media (max-width: 480px) {
+        @content;
+    }
+}
+
+@mixin atxs332 {
+    @media (max-width: 332px) {
+        @content;
+    }
+}
+
+@mixin atMax($breakpoint) {
+    @media (max-width: #{$breakpoint}px) {
+        @content;
+    }
+}
+
+@mixin atMin($breakpoint) {
+    @media (min-width: #{$breakpoint}px) {
+        @content;
+    }
+}

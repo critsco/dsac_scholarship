@@ -1,0 +1,36 @@
+.quill-output {
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-label::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item::before {
+    content: attr(data-value) !important;
+    font-weight: 600;
+}
+
+.ql-snow .ql-picker.ql-header .ql-picker-label::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item::before {
+    font-weight: 600;
+}
+
+.ql-container.ql-snow {
+    min-height: 200px;
+
+    .ql-editor.ql-blank {
+        &::before {
+            font-style: normal;
+            font-size: 14px;
+        }
+    }
+}
+strong {
+    font-weight: bold;
+}

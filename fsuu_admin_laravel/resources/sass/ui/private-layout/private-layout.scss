@@ -1,0 +1,192 @@
+.private-layout {
+    background: $layoutBackground;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+
+    > .ant-layout {
+        background-color: transparent;
+        max-width: 100%;
+        margin-left: 240px;
+
+        transition: all 0.25s, background 0s;
+
+        @include atsm {
+            margin-left: 0px;
+        }
+
+        &.ant-layout-has-collapse {
+            margin-left: 55px;
+            max-width: 100%;
+
+            @include atsm {
+                margin-left: 0px;
+            }
+        }
+
+        &:not(&.ant-layout-has-collapse) {
+            .ant-layout-header {
+                .header-left-menu {
+                    .menu-left-icon.menu-left-icon-menu-collapse-on-close {
+                        @include atsm {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        > .ant-layout-content {
+            background-color: #ffffff;
+
+            @include atsm {
+                margin-top: 70px;
+            }
+
+            > .ant-breadcrumb {
+                padding: 12px 10px 12px 20px;
+                background-color: $breadcrumColor;
+                // height: 56px !important;
+
+                @include atxs {
+                    padding-left: 10px;
+                }
+
+                .ant-breadcrumb-link a,
+                .breadcrumb-item-text {
+                    font-size: 14px !important;
+                    color: $breadcrumTextColor;
+                }
+                .ant-breadcrumb-link a svg {
+                    font-size: 16px !important;
+                }
+                .ant-breadcrumb-link svg {
+                    color: $breadcrumIconColor;
+                }
+                .ant-breadcrumb-separator {
+                    position: relative;
+
+                    svg {
+                        color: $breadcrumIconColor;
+                    }
+
+                    .arrow {
+                        position: absolute;
+                        left: -4px;
+                        top: 10px;
+                        color: $mainPrimary;
+
+                        &::before,
+                        &::after {
+                            position: absolute;
+                            width: 6px;
+                            height: 1.5px;
+                            background-color: currentcolor;
+                            border-radius: 2px;
+                            content: "";
+                        }
+
+                        &::before {
+                            -moz-transform: rotate(45deg) translateY(-2.5px);
+                            -webkit-transform: rotate(45deg) translateY(-2.5px);
+                            transform: rotate(45deg) translateY(-2.5px);
+                        }
+                        &::after {
+                            -moz-transform: rotate(-45deg) translateY(2.5px);
+                            -webkit-transform: rotate(-45deg) translateY(2.5px);
+                            transform: rotate(-45deg) translateY(2.5px);
+                        }
+
+                        @supports (-moz-appearance: none) {
+                            &::before,
+                            &::after {
+                                width: 7px;
+                                height: 2.5px;
+                            }
+                        }
+                    }
+                }
+
+                .breadcrumb-item-last {
+                    color: $breadcrumLastTextColor !important;
+                }
+            }
+
+            > .ant-card {
+                border-top: 1px solid #58585a;
+                background-color: transparent;
+                height: 100%;
+
+                > .ant-card-body {
+                    padding: 20px;
+                    background-color: transparent;
+
+                    @include atxs {
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+
+        > .ant-layout-footer {
+            padding: 15px 20px;
+            border-top: 1px solid #58585a;
+        }
+    }
+}
+
+.notification-notice {
+    background: white;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    /* width: 390px; */
+    z-index: 9999999;
+    padding: 15px 17px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.47);
+    box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.47);
+
+    .notification-notice-content {
+        display: flex;
+        gap: 8px;
+
+        .notification-notice-message {
+            display: flex;
+            flex-direction: column;
+
+            .title {
+                font-size: 18;
+                font-weight: 700;
+            }
+
+            .description {
+                font-size: 14;
+            }
+
+            .action {
+                margin-top: 10px;
+
+                .ant-btn {
+                    background-color: $mainSecondary;
+                    color: $mainSecondaryText;
+
+                    &:hover {
+                        border-color: $mainSecondary;
+                    }
+
+                    svg {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+
+        .notification-notice-icon {
+            svg {
+                font-size: 40px;
+            }
+        }
+    }
+}

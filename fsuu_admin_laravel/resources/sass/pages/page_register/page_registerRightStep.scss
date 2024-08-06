@@ -1,0 +1,150 @@
+#PageRegistration {
+    .ant-layout-content {
+        .container {
+            .right {
+                // STEPS
+                .progress-wrapper {
+                    height: 100%;
+                    display: flex;
+
+                    .steps {
+                        display: flex;
+                        position: relative;
+
+                        justify-content: center;
+                        align-items: center;
+
+                        .step-item {
+                            width: 125px;
+
+                            .step-item-container {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                text-align: center;
+
+                                width: 187px;
+
+                                .step-item-icon {
+                                    height: 35px;
+                                    width: 35px;
+                                    border-radius: 50%;
+
+                                    color: transparent;
+                                    text-align: center;
+                                    font-size: 22px;
+                                    font-weight: 700;
+
+                                    margin-right: 15px;
+                                }
+                                .step-1 {
+                                    background-color: #ffbc47;
+                                }
+                                .step-2 {
+                                    background-color: #40cee3;
+                                }
+                                .step-3 {
+                                    background-color: #f65e5d;
+                                }
+                                .step-4 {
+                                    background-color: #1d2d5f;
+                                }
+
+                                .step-item-tail {
+                                    .circle-1,
+                                    .circle-2,
+                                    .circle-3,
+                                    .circle-1:before,
+                                    .circle-2:before,
+                                    .circle-3:before,
+                                    .circle-1:after,
+                                    .circle-2:after,
+                                    .circle-3:after {
+                                        position: absolute;
+                                        width: 15px;
+                                        height: 15px;
+                                        border-radius: 20px;
+                                    }
+
+                                    .circle-1:before,
+                                    .circle-1:after {
+                                        background-color: #ffbc47;
+                                        right: 20px;
+                                        content: "";
+                                    }
+                                    .circle-2:before,
+                                    .circle-2:after {
+                                        background-color: #40cee3;
+                                        right: 20px;
+                                        content: "";
+                                    }
+                                    .circle-3:before,
+                                    .circle-3:after {
+                                        background-color: #f65e5d;
+                                        right: 20px;
+                                        content: "";
+                                    }
+
+                                    .circle-1:after,
+                                    .circle-2:after,
+                                    .circle-3:after {
+                                        left: 20px;
+                                    }
+                                }
+                            }
+                            &.active {
+                                margin-right: 20px;
+                                margin-left: 20px;
+                                .step-item-container {
+                                    .step-item-icon {
+                                        width: 80px;
+                                        height: 80px;
+                                        font-size: 53px;
+                                        color: #ffffff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .progress-content {
+                    height: 100%;
+                    width: 100% !important;
+                    display: flex;
+                    flex-direction: column;
+                    border: none !important;
+                    margin: 0px !important;
+
+                    .ant-card {
+                        border: 0px;
+                    }
+                }
+
+                .progress-btn {
+                    display: flex;
+                    gap: 16px;
+                    justify-content: flex-end;
+                    padding-right: 50px;
+
+                    .btn-continue,
+                    .btn-done {
+                        border-radius: 5px !important;
+                        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+                        background-color: #2a60d4;
+                        color: #ffffff;
+                        width: 104px;
+                    }
+
+                    .btn-back {
+                        border-radius: 5px !important;
+                        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+                        background-color: #ffffff;
+                        color: #2a60d4;
+                        width: 104px;
+                    }
+                }
+            }
+        }
+    }
+}

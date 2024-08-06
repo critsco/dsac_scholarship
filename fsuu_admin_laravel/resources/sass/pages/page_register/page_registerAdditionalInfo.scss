@@ -1,0 +1,28 @@
+#PageRegistration {
+    .ant-layout-content {
+        .container {
+            .right {
+                .additional-content {
+                    .Q1-wrapper {
+                        .ant-checkbox-group {
+                            gap: 109px;
+                        }
+                    }
+
+                    .Q2-wrapper {
+                        .ant-checkbox-group {
+                            width: 50%;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 40px;
+                        }
+
+                        .answer-D {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,110 @@
+.private-layout {
+	background-color: $layoutBackground;
+	position: relative;
+	overflow: hidden auto;
+	min-height: 100vh;
+
+	> .ant-layout-content {
+		padding-bottom: 100px;
+		background-color: #ffffff;
+	}
+
+	.ant-layout-footer {
+		z-index: 1;
+
+		&.navigation {
+			position: fixed;
+			bottom: 0px;
+			height: 70px;
+			background-color: #ffffff;
+			width: 100%;
+			display: flex;
+			box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.4);
+			padding: 15px 0px !important;
+
+			.icon {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				color: #70788f;
+				font-size: 24px;
+
+				svg {
+					color: #70788f;
+					font-size: 24px;
+				}
+				.label {
+					color: #70788f;
+					font-size: 14px;
+				}
+
+				&.active {
+					svg {
+						color: $mainPrimary;
+					}
+					.label {
+						color: $mainPrimary;
+					}
+				}
+			}
+		}
+	}
+}
+
+.notification-notice {
+	background: white;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	/* width: 390px; */
+	z-index: 9999999;
+	padding: 15px 17px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.47);
+	-moz-box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.47);
+	box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.47);
+
+	.notification-notice-content {
+		display: flex;
+		gap: 8px;
+
+		.notification-notice-message {
+			display: flex;
+			flex-direction: column;
+
+			.title {
+				font-size: 18;
+				font-weight: 700;
+			}
+
+			.description {
+				font-size: 14;
+			}
+
+			.action {
+				margin-top: 10px;
+
+				.ant-btn {
+					background-color: $mainSecondary;
+					color: $mainSecondaryText;
+
+					&:hover {
+						border-color: $mainSecondary;
+					}
+
+					svg {
+						margin-right: 5px;
+					}
+				}
+			}
+		}
+
+		.notification-notice-icon {
+			svg {
+				font-size: 40px;
+			}
+		}
+	}
+}

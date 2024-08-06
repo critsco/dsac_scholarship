@@ -1,0 +1,88 @@
+#PageRegistration {
+    .ant-layout-content {
+        .container {
+            .right {
+                padding: 0px;
+                overflow: hidden;
+
+                .ant-card {
+                    width: 100%;
+
+                    .ant-card-body {
+                        padding: 0px 70px !important;
+                        .parent-content {
+                            .siblings-wrapper,
+                            .relationship-wrapper {
+                                display: flex;
+
+                                .ant-form-item {
+                                    width: 49%;
+                                }
+                            }
+
+                            .address-wrapper {
+                                .address-select {
+                                    display: flex;
+                                    flex-direction: row;
+                                    width: 98%;
+                                    .ant-form-item {
+                                        width: 95%;
+                                    }
+                                }
+                                .municipality {
+                                    width: 49%;
+                                }
+                            }
+
+                            .sponsor-wrapper {
+                                .sponsor-select {
+                                    margin: 0px;
+                                    .ant-checkbox-group {
+                                        column-gap: 14px !important;
+                                        .ant-checkbox-wrapper {
+                                            width: 20%;
+                                            margin-bottom: 20px;
+                                        }
+                                    }
+                                }
+
+                                .custom-label {
+                                    width: 55%;
+                                }
+                                .ant-form-item-control-input-content {
+                                    display: flex;
+                                }
+                            }
+
+                            .income-wrapper {
+                                .ant-checkbox-group {
+                                    gap: 48px;
+                                }
+                            }
+
+                            .beneficiary-wrapper {
+                                margin-bottom: 0px;
+                            }
+
+                            .birth-wrapper {
+                                display: flex;
+                                gap: 10px;
+                                .date {
+                                    width: 45%;
+
+                                    .ant-picker {
+                                        float: left;
+                                    }
+                                    .date-format {
+                                        float: left;
+                                        margin-left: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

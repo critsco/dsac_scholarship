@@ -1,0 +1,72 @@
+.ant-modal-root {
+	.ant-modal-wrap {
+		.ant-modal {
+			padding-bottom: 0px;
+
+			.ant-modal-content {
+				border-radius: 0px;
+				padding: 0px;
+
+				.ant-modal-close {
+					top: 20px;
+					color: #ffffff;
+				}
+
+				.ant-modal-header {
+					margin-bottom: 0px;
+					padding: 20px;
+					background-color: $mainPrimary;
+					border-radius: 0px;
+
+					.ant-modal-title {
+						color: #ffffff;
+					}
+				}
+
+				.ant-modal-body {
+					padding: 20px;
+				}
+
+				.ant-modal-footer {
+					padding: 20px;
+
+					.ant-btn {
+						&.ant-btn-primary {
+							color: $mainPrimaryText;
+							background-color: $mainPrimary;
+							border-color: $mainPrimary;
+
+							&:hover {
+								color: $mainPrimaryTextActive;
+								background-color: $mainPrimaryActive;
+								border-color: $mainPrimary;
+							}
+
+							&:focus {
+								color: $mainPrimaryTextActive;
+								background-color: $mainPrimaryActive;
+								border-color: $mainPrimary;
+							}
+						}
+
+						&.ant-btn-default {
+							color: $mainPrimaryTextActive;
+							background-color: $mainPrimaryActive;
+							border-color: $mainSecondaryActive;
+
+							&:hover {
+								border-color: $mainPrimary;
+							}
+
+							&:focus {
+								color: $mainPrimaryText;
+								background-color: $mainPrimary;
+								border-color: $mainPrimary;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

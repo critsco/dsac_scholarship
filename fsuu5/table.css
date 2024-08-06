@@ -1,0 +1,37 @@
+:root {
+    --text-color: #2c3e50;
+}
+
+#scholarshipTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#scholarshipTable th,
+#scholarshipTable td {
+    padding: 12px;
+    text-align: left;
+    border: 2px solid #dee2e6;
+    color: var(--text-color);
+}
+
+#scholarshipTable th {
+    background-color: #4a4a4a;
+    color: white;
+}
+
+.table-container {
+    overflow-x: auto;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .d-flex.flex-column {
+      align-items: stretch; 
+    }
+    .d-flex {
+        margin-top: 20px;
+    }
+  }

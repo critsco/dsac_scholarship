@@ -1,0 +1,81 @@
+.ant-modal-root {
+    .ant-modal-mask {
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .ant-modal-wrap {
+        .ant-modal {
+            padding-bottom: 20px;
+
+            .ant-modal-content {
+                border-radius: 0px;
+                padding: 0px;
+
+                .ant-modal-close {
+                    top: 20px;
+                    right: 15px;
+                    color: #ffffff;
+                    background-color: transparent;
+                    width: auto;
+                    height: auto;
+                }
+
+                .ant-modal-header {
+                    margin-bottom: 0px;
+                    padding: 15px 15px;
+                    background-color: $mainPrimary;
+                    border-radius: 0px;
+
+                    .ant-modal-title {
+                        color: #ffffff;
+                    }
+                }
+
+                .ant-modal-body {
+                    padding: 15px;
+                }
+
+                .ant-modal-footer {
+                    padding: 0px 15px 15px 15px;
+                    margin-top: 0px;
+
+                    .ant-btn {
+                        &.ant-btn-primary {
+                            color: $mainPrimaryText;
+                            background-color: $mainPrimary;
+                            border-color: $mainPrimary;
+
+                            &:hover {
+                                color: $mainPrimaryTextActive;
+                                background-color: $mainPrimaryActive;
+                                border-color: $mainPrimary;
+                            }
+
+                            &:focus {
+                                color: $mainPrimaryTextActive;
+                                background-color: $mainPrimaryActive;
+                                border-color: $mainPrimary;
+                            }
+                        }
+
+                        &.ant-btn-default {
+                            color: $mainPrimaryTextActive;
+                            background-color: $mainPrimaryActive;
+                            border-color: $mainSecondaryActive;
+
+                            &:hover {
+                                border-color: $mainPrimary;
+                            }
+
+                            &:focus {
+                                color: $mainPrimaryText;
+                                background-color: $mainPrimary;
+                                border-color: $mainPrimary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

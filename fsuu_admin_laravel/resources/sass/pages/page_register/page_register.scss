@@ -1,0 +1,523 @@
+#PageRegistration {
+    background-color: transparent;
+    height: 100%;
+
+    .ant-layout-content {
+        .container {
+            background-color: transparent;
+            display: flex;
+            max-width: 100%;
+            padding: 0px;
+            margin: 0px;
+            min-height: 100vh;
+
+            .left {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: "RobotoRegular";
+                width: 30%;
+                min-height: 100vh;
+
+                .menu-wrapper {
+                    position: fixed;
+                    top: 8px;
+                    width: 5%;
+                    left: 350px;
+
+                    color: white;
+                    font-size: 18px;
+                    font-weight: 700;
+
+                    .nav-tab {
+                        padding: 10px 15px;
+                        border-top-left-radius: 8px;
+                        border-bottom-left-radius: 8px;
+
+                        a {
+                            color: white;
+                            font-size: 18px;
+                            font-weight: 700;
+                            text-decoration: none;
+                        }
+                    }
+
+                    .active {
+                        color: black;
+                        background-color: white;
+                    }
+                }
+
+                .logo-container {
+                    position: fixed;
+
+                    .logo-wrapper {
+                        text-align: center;
+
+                        @include atmd {
+                            img {
+                                width: 100px;
+                            }
+                        }
+                        @include atsm {
+                            margin: 0;
+                        }
+                    }
+                }
+
+                .title {
+                    letter-spacing: 12px;
+                    line-height: 1;
+                    color: white;
+                    text-align: center;
+                    font-weight: bolder;
+                    font-size: 95px;
+
+                    @include atmd {
+                        letter-spacing: 7px;
+                        font-size: 45px;
+                        padding-top: 10%;
+                    }
+                }
+
+                .sub-title {
+                    color: white;
+                    letter-spacing: 1px;
+                    font-weight: 100;
+                    font-size: 16px;
+
+                    @include atmd {
+                        font-size: 7px;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .right {
+                width: 100%;
+                min-height: 100vh;
+                background-color: #ffffff;
+
+                .student-content,
+                .parent-content,
+                .academic-content,
+                .academic-content,
+                .additional-content {
+                    overflow: hidden scroll;
+                    height: 450px;
+
+                    display: flex;
+                    width: 100%;
+                    text-align: left;
+                    .right-side {
+                        margin-left: 0px !important;
+                    }
+
+                    .left-side,
+                    .right-side {
+                        width: 100%;
+                        margin: 27px;
+                        padding-left: 80px;
+
+                        .ant-col {
+                            width: 95% !important;
+                            padding: 0px;
+
+                            .ant-radio-group {
+                                margin-bottom: 25px;
+                                .ant-radio-inner {
+                                    border-radius: 20% !important;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .student-banner,
+                .parent-banner,
+                .academic-banner,
+                .additional-banner {
+                    float: left;
+                    width: 350px;
+                    height: 54px;
+                    color: #ffffff;
+
+                    text-align: center !important;
+                    border-top-right-radius: 15px;
+                    border-bottom-right-radius: 15px;
+                    margin-bottom: 15px;
+                    font-size: 32px;
+                    font-weight: 700;
+
+                    &.p {
+                        padding-left: 42px;
+                    }
+                }
+
+                .student-banner {
+                    background-color: #ffbc47;
+                }
+                .parent-banner {
+                    background-color: #40cee3;
+                }
+                .academic-banner {
+                    background-color: #f65e5d;
+                }
+                .additional-banner {
+                    background-color: #1d2d5f;
+                }
+
+                .ant-form {
+                    width: 100%;
+
+                    .title {
+                        margin-bottom: 0px;
+                        padding: 30px 84px 0px;
+                        font-size: 50px;
+                        font-family: "RobotoBold" !important;
+                    }
+
+                    .sub-title {
+                        margin-bottom: 0px;
+                        padding: 0px 84px;
+                        font-size: 14px;
+                        font-weight: 100;
+                        font-style: italic;
+
+                        .sub-title1 {
+                            font-size: 14px;
+                            font-weight: 800 !important;
+                            font-style: normal !important;
+                            padding: 9px 0px 0px !important;
+                            margin-bottom: 5px;
+                        }
+                    }
+
+                    .select-wrapper {
+                        display: flex;
+                        width: 70%;
+                        gap: 20px;
+                        margin-left: 85px;
+                    }
+
+                    hr {
+                        border-top: 3px solid #7d7c7c;
+                        margin: 0px 39px 0px !important;
+                        width: 90%;
+                    }
+
+                    .applicant {
+                        display: flex;
+                        margin-left: 39px;
+
+                        .Col {
+                            width: 15%;
+                            padding-left: 5px !important;
+                        }
+
+                        textarea {
+                            resize: none !important;
+                            border: none !important;
+                            background-color: #ffffff;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ModalRegisterReview {
+    width: 90% !important;
+
+    .ant-modal-content {
+        border-radius: 15px !important;
+
+        .ant-modal-body {
+            padding: 20px 0px 0px !important;
+
+            .ant-row {
+                margin-left: 0px !important;
+
+                .ant-col {
+                    padding-left: 0px !important;
+                }
+            }
+
+            .student-content,
+            .parent-content,
+            .academic-content,
+            .additional-content {
+                margin: 0px 100px 0px !important;
+            }
+
+            .review-title,
+            .select-wrapper {
+                display: flex;
+                justify-content: center;
+                font-family: "RobotoBold" !important;
+
+                .ant-form-item {
+                    width: 100%;
+                    .ant-row {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .select-wrapper {
+                border-bottom: 3px solid #d9d9d9;
+            }
+
+            .student-banner,
+            .parent-banner,
+            .academic-banner,
+            .additional-banner {
+                width: 350px;
+                height: 54px;
+                color: #ffffff;
+
+                text-align: center !important;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                margin-bottom: 15px;
+                font-size: 32px;
+                font-weight: 700;
+
+                &.p {
+                    padding-left: 42px;
+                }
+            }
+
+            .student-banner {
+                background-color: #ffbc47;
+            }
+            .parent-banner {
+                background-color: #40cee3;
+            }
+            .academic-banner {
+                background-color: #f65e5d;
+            }
+            .additional-banner {
+                background-color: #1d2d5f;
+            }
+
+            .applicant {
+                display: flex;
+                justify-content: space-between;
+                margin: 0px 40px 0px;
+
+                padding-top: 20px;
+
+                .ant-col {
+                    display: flex;
+                    gap: 20px;
+
+                    .float-wrapper {
+                        border: 0px;
+                    }
+                    .ant-form-item {
+                        width: 50%;
+                    }
+                }
+            }
+
+            .ant-card {
+                border: 0px;
+            }
+
+            // Student Profile
+            .student-content {
+                display: flex;
+                flex: row;
+
+                .left-side,
+                .right-side {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+
+                    .name-wrapper,
+                    .birth-wrapper,
+                    .contact_information,
+                    .more-info,
+                    .language-wrapper,
+                    .gender-bloodtype,
+                    .height-weight {
+                        width: 90% !important;
+                        gap: 20px;
+                    }
+
+                    .birth-wrapper {
+                        display: flex;
+                        .ant-form-item {
+                            width: 100%;
+                        }
+                        .ant-picker {
+                            width: 100%;
+                        }
+                    }
+
+                    .language-wrapper,
+                    .gender-bloodtype,
+                    .height-weight {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .custom-label,
+                        .ant-form-item {
+                            width: 50% !important;
+                            gap: 15px;
+                        }
+                    }
+                }
+            }
+
+            // Student School
+            .student-school-content {
+                .left-side {
+                    gap: 80px;
+                    .ant-row {
+                        display: flex !important;
+                        flex-direction: column !important;
+                        width: 45% !important;
+                    }
+
+                    .elementary-wrapper,
+                    .jhs-wrapper,
+                    .shs-wrapper,
+                    .college-wrapper {
+                        .ant-form-item {
+                            .ant-form-item-row {
+                                width: 100% !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // Studen Address
+            .student-address {
+                .left-side {
+                    .ant-row {
+                        width: 100% !important;
+                    }
+                }
+            }
+
+            // Parent Profile
+            .parent-content {
+                display: flex;
+
+                .left-side {
+                    .ant-row {
+                        display: flex;
+                        flex-direction: column;
+                        width: 95%;
+                    }
+                }
+                .right-side {
+                    .ant-row {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+
+                        .siblings-wrapper {
+                            display: flex;
+                            gap: 20px;
+                            .ant-form-item {
+                                width: 50%;
+                            }
+                        }
+
+                        .address-wrapper {
+                            .address-select,
+                            .municipality {
+                                display: flex;
+                                gap: 20px;
+                                .ant-form-item {
+                                    width: 50%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            // Parent || Case of Emergency
+            .parent-contact {
+                .left-side {
+                    .ant-row {
+                        display: flex;
+                        flex-direction: column;
+                        width: 95%;
+                    }
+                }
+            }
+
+            // Academic Profile
+            .academic-content {
+                .second-courses-wrapper {
+                    .sub-title {
+                        display: flex;
+                    }
+                }
+
+                .transferee-wrapper {
+                    .school-wrapper {
+                        display: flex;
+                    }
+                    .accepted-wrapper,
+                    .attended-wrapper {
+                        display: flex;
+                        gap: 20px;
+                    }
+                }
+            }
+
+            // Additional Information
+            .additional-content {
+                .left-side {
+                    .ant-row {
+                        .ant-col {
+                            width: 100%;
+                        }
+                        .Q2-wrapper {
+                            .ant-checkbox-group {
+                                display: flex;
+                                flex-direction: column;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .ant-modal-footer {
+            .btn-save {
+                border-radius: 5px !important;
+                box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+                background-color: #fc0c0c !important;
+                border: none !important;
+                color: #ffffff;
+                width: 104px;
+            }
+
+            .btn-cancel {
+                border-radius: 5px !important;
+                box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+                background-color: #ffffff;
+                color: #2a60d4;
+                width: 104px;
+            }
+        }
+    }
+}
+
+@import "./page_register_student_profile";
+@import "./page_register_parent_profile";
+@import "./page_register_academic_profile";
+@import "./page_register_additional_info";
+@import "./page_register_right_step";

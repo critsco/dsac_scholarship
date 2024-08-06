@@ -1,0 +1,44 @@
+.modal-wrap-student-upload-excel {
+    .ant-modal {
+        .ant-modal-content {
+            .ant-modal-body {
+                .ant-upload-wrapper {
+                    &.upload-faculty-load {
+                        padding: 30px;
+                        border-style: dashed;
+                        border-width: 1px;
+                        display: flex;
+
+                        .ant-upload {
+                            width: 100%;
+
+                            .ant-upload {
+                                .ant-upload-hint {
+                                    width: 100%;
+                                    white-space: break-spaces;
+                                }
+
+                                p {
+                                    text-align: center;
+                                }
+                            }
+                        }
+
+                        .ant-upload-drag-icon {
+                            font-size: 56px;
+                            margin: 0;
+                            color: rgb(0, 119, 255);
+                        }
+
+                        &:hover {
+                            background-color: rgba(252, 251, 251, 0.884);
+                            .p {
+                                font-size: 700;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+#PageUser {
+    padding: 5px;
+    .ant-collapse {
+        &.collapse-profile-photo {
+            .ant-collapse-item {
+                .ant-collapse-content {
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    .ant-collapse-content-box {
+                        .ant-space {
+                            @include atxs {
+                                display: flex;
+                                flex-direction: column;
+                                width: 100%;
+                            }
+                            .ant-space-item {
+                                @include atxs {
+                                    width: 100%;
+                                }
+
+                                .ant-btn {
+                                    @include atxs {
+                                        width: 100%;
+                                    }
+                                }
+
+                                .ant-upload {
+                                    @include atxs {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import "./page_users_edit.scss";

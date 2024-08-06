@@ -1,0 +1,10 @@
+.ant-tabs .ant-tabs-tab + .ant-tabs-tab {
+    margin-left: 20px;
+}
+.ant-tabs-top > .ant-tabs-nav {
+    margin-bottom: 15px;
+
+    &::before {
+        border-bottom: none;
+    }
+}

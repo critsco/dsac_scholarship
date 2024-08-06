@@ -1,0 +1,79 @@
+/* ======= Custom Cards Styles ======= */
+.custom-cards {
+    padding: 60px 0;
+}
+
+.card {
+    background-color: #fffffe;
+    border-radius: 8px;
+    margin-bottom: 20px; /* Increase vertical spacing to 40px */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #666;
+}
+
+.custom-number {
+    font-weight: bold;
+    color: #3498db;
+}
+
+/* Add more styling as needed */
+
+/* Uniform Card Size */
+.custom-cards .card {
+    height: 100%;
+}
+
+/* Card 1 */
+#card1 {
+    border: 2px solid #3498db; /* Blue Border */
+  }
+  
+  /* Card 2 */
+#card2 {
+    border: 2px solid #2ecc71; /* Green Border */
+  }
+
+  /* Card 3 */
+#card3 {
+    border: 2px solid #36b9cc;
+  }
+  
+  /* Card 4 */
+#card4 {
+    border: 2px solid #f1c40f;
+  }
+
+  /* Card 5 */
+#card5 {
+    border: 2px solid #3498db;
+  }
+  
+  /* Card 6 */
+#card6 {
+    border: 2px solid #2ecc71; /* Green Border */
+  }
+
+  /* Card 7 */
+#card7 {
+    border: 2px solid #36b9cc;
+  }
+  
+  /* Card 8 */
+#card8 {
+    border: 2px solid #f1c40f;  
+  }

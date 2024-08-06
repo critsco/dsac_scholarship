@@ -1,0 +1,252 @@
+@supports (zoom: 2) {
+    input[type="radio"],
+    input[type="checkbox"] {
+        zoom: 2;
+    }
+}
+@supports not (zoom: 2) {
+    input[type="radio"],
+    input[type="checkbox"] {
+        transform: scale(2);
+        margin: 15px;
+    }
+}
+
+.ant-input-affix-wrapper {
+    padding: 0px 12px 0px 12px;
+    border-radius: 0px;
+    border: 0px;
+
+    &:hover {
+        border: 0px;
+    }
+}
+
+.ant-input-outlined,
+.ant-input-outlined:focus,
+.ant-input-outlined:focus-within {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.ant-input {
+    border: 0px;
+    box-shadow: none;
+}
+
+.ant-input,
+.ant-input-number-input,
+.ant-picker {
+    height: 40px;
+}
+
+.float-wrapper {
+    position: relative;
+    border: 1px solid #58585a;
+
+    .label {
+        font-size: 14px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 12px;
+        top: 12px;
+        transition: 0.2s ease all;
+        color: $floatLabel;
+        z-index: 1;
+        line-height: normal;
+
+        &.float-label {
+            top: 2px;
+            font-size: 11px;
+        }
+    }
+
+    > .ant-input {
+        padding-top: 12px !important;
+        padding-bottom: 0px !important;
+    }
+
+    .ant-input-affix-wrapper {
+        &.ant-input-status-error {
+            border: 0px;
+        }
+
+        > .ant-input {
+            padding-top: 12px !important;
+        }
+    }
+
+    &.float-input-mask {
+        .ant-input {
+            padding: 12px 12px 0px 12px !important;
+            border-radius: 0px;
+            border: 0px;
+            width: 100%;
+
+            &:focus-visible {
+                outline: 0px;
+                outline-offset: 0px;
+            }
+        }
+    }
+
+    &.float-input-number {
+        .ant-input-number {
+            width: 100%;
+
+            &.ant-input-number-outlined {
+                border: 0px;
+
+                &.ant-input-number-status-error:not(
+                        .ant-input-number-disabled
+                    ) {
+                    border-width: 0px;
+                }
+                &:focus-within {
+                    border-width: 0px;
+                    box-shadow: none;
+                    border-color: transparent;
+                }
+            }
+
+            .ant-input-number-input-wrap {
+                .ant-input-number-input {
+                    padding: 12px 12px 0px 12px !important;
+                }
+            }
+
+            &.hide-input-handler-wrapper {
+                .ant-input-number-handler-wrap {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &.float-input-password-strength {
+        border: 0px;
+
+        .ant-input-affix-wrapper {
+            border: 1px solid #58585a;
+        }
+
+        > div {
+            line-height: 0px !important;
+        }
+    }
+
+    &.float-input-search {
+        .ant-input-affix-wrapper {
+            .ant-input-suffix {
+                > svg {
+                    color: #58585a;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    &.float-select {
+        .ant-select {
+            border: 0px;
+            height: 40px;
+
+            .ant-select-selector {
+                border: 0px;
+
+                .ant-select-selection-search {
+                    .ant-select-selection-search-input {
+                        padding-top: 12px;
+                    }
+                }
+
+                .ant-select-selection-item {
+                    padding-top: 12px;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+
+    &.float-select-multi {
+        .ant-select {
+            border: 0px;
+            line-height: normal;
+
+            .ant-select-selector {
+                border: 0px;
+                padding-block: 0px;
+
+                .ant-select-selection-overflow {
+                    line-height: normal;
+                    height: 40px;
+                    padding-top: 12px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+
+                    .ant-select-selection-overflow-item {
+                        line-height: normal;
+
+                        &.ant-select-selection-overflow-item-suffix {
+                            line-height: normal;
+                        }
+
+                        .ant-select-selection-item {
+                            margin-block: 0px;
+                            line-height: normal;
+                            height: 20px;
+
+                            .ant-select-selection-item-content {
+                                line-height: normal;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.float-date-picker {
+        .ant-picker {
+            width: 100%;
+            border: 0px;
+
+            .ant-picker-input {
+                input {
+                    padding-top: 12px;
+                }
+            }
+        }
+    }
+
+    &.float-textarea {
+        .ant-input {
+            padding-top: 0px !important;
+            margin-top: 12px;
+        }
+    }
+
+    &.quill {
+        .ql-toolbar {
+            border: 0px;
+            border-bottom: 1px solid #58585a;
+            padding: 5px;
+        }
+        .ql-container {
+            border: 0px;
+            height: 150px;
+
+            .ql-editor {
+                padding: 12px 10px;
+
+                &.ql-blank {
+                    &::before {
+                        left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

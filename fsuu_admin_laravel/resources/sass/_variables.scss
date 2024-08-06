@@ -1,0 +1,146 @@
+@font-face {
+    font-family: "RobotoRegular";
+    src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "RobotoMedium";
+    src: url("../fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "RobotoBold";
+    src: url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+}
+
+// Body
+// $body-bg: #027273;
+$body-bg: #0027ae;
+$back-image: url("/public/images/login_bg.png");
+
+// Typography
+$font-family-sans-serif: RobotoRegular;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+$primary: #0866c6;
+$primaryActive: #0753a1;
+
+$secondary: #868e96;
+$secondaryActive: #727b84;
+
+$success: #23bf08;
+$successActive: #1c9a06;
+
+$warning: #f49917;
+$warningActive: #da850a;
+
+$danger: #dc3545;
+$dangerActive: #c82333;
+
+$info: #5b93d3;
+$infoActive: #3d7fcb;
+
+$indigo: #6610f2;
+$indigoActive: #560bd0;
+
+$purple: #6f42c1;
+$purpleActive: #5e37a6;
+
+$pink: #e83e8c;
+$pinkActive: #e41c78;
+
+$teal: #1caf9a;
+$tealActive: #178e7d;
+
+$dark: #343a40;
+$darkActive: #23272b;
+
+$orange: #f27510;
+$orangeActive: #d16a17;
+
+// layout
+$layoutBackground: transparent;
+$textColor: #ffffff;
+$iconColor: #009999;
+$textColorActive: #ffffff;
+$iconColorActive: #ffffff;
+
+// layout side menu
+$sideBarBackground: transparent;
+$sideBarBackgroundSelectedMenu: #0157de;
+$sideBarBorderColor: #f0e3ca;
+$sideBarTextColor: #ffffff;
+$sideBarIconColor: #9ae9fd;
+$sideBarTextColorActive: #ffffff;
+$sideBarIconColorActive: #9ae9fd;
+$sideBarThumbColor: #808285;
+$sideBarTrackColor: #bbbbbb;
+
+// side-sub-menu: #212121f7;
+$submenu-default: #292a2a;
+$submenu-default-hover: #9f9d9d4d;
+$submenu-default-hover2: #a2e7e94d;
+$submenu-default-selected: #f7f5f58c;
+
+// layout header
+$headerBackground: transparent;
+$headerBackgroundSelectedMenu: #2d60e2;
+$headerTextColor: #bdbec0;
+$headerLeftIconColor: #13f4f1;
+$headerRightIconColor: #ffffff;
+$headerTextColorActive: #13f4f1;
+$headerIconColorActive: #13f4f1;
+$headerProfileColor: #13f4f1;
+
+// layout header dropdown
+$headerDropdownBackgroundSelectedMenu: #358e8f;
+$headerDropdownTextColor: #58585a;
+$headerDropdownIconColor: #0157de;
+$headerDropdownTextColorActive: #0157de;
+$headerDropdownIconColorActive: #58585a;
+$headerDropdownTitleColor: #0157de;
+$headerDropdownImgBorderColor: #13f4f1;
+$headerDropdownBorderColor: #949599;
+
+// breadcrumColor
+$breadcrumColor: transparent;
+$breadcrumTextColor: #163ca6;
+$breadcrumIconColor: #163ca6;
+$breadcrumLastTextColor: #e4151f;
+
+// page header
+$pageHeaderBackground: transparent;
+$pageHeaderBorderColor: #58585a;
+$pageHeaderColorTitle: #e5f1eb;
+$pageHeaderColorSubTitle: #e9e9ec;
+$pageHeaderIconColor: #d1ebde;
+$pageHeaderIconBorderColor: #b3d5c4;
+
+$mainPrimary: #114eaf;
+$mainPrimaryText: #ffffff;
+$mainPrimaryActive: #ffffff;
+$mainPrimaryTextActive: #114eaf;
+$mainSecondary: #e4151f;
+$mainSecondaryText: #ffffff;
+$mainSecondaryActive: #b0b4b4;
+$mainSecondaryTextActive: #e4151f;
+
+$tooltip-success: #d9f1d1;
+$tooltip-primary: #e0e9f5;
+$tooltip-warning: #faecd4;
+$tooltip-danger: #f3d8da;
+$tooltip-success-text: #2e611a;
+$tooltip-primary-text: #354b6b;
+$tooltip-warning-text: #78521e;
+$tooltip-danger-text: #692326;
+
+// Floating
+$floatLabel: #918f8ffa;
+
+// Collapse
+$collapseHeader: #3d445d;
+
+$table-scrollbar-thumb-color: #1e84c1;
+$table-scrollbar-thumb-width: 8px;
+$table-scrollbar-track-color: #bbb;

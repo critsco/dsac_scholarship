@@ -1,0 +1,27 @@
+.ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover
+    .ant-checkbox-checked:not(.ant-checkbox-disabled):after,
+.ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover
+    .ant-checkbox-inner,
+.ant-checkbox:not(.ant-checkbox-disabled):hover .ant-checkbox-inner {
+    border-color: $mainPrimary;
+}
+.ant-checkbox-checked .ant-checkbox-inner {
+    background-color: $mainPrimary;
+    border-color: $mainPrimary;
+}
+
+.ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover
+    .ant-checkbox-checked:not(.ant-checkbox-disabled)
+    .ant-checkbox-inner,
+.ant-checkbox-wrapper-checked:not(.ant-checkbox-wrapper-disabled):hover
+    .ant-checkbox-inner,
+.ant-checkbox-checked:not(.ant-checkbox-disabled):hover .ant-checkbox-inner {
+    background-color: $mainPrimary;
+    border-color: $mainPrimary;
+}
+
+.form-item-checkbox {
+    .ant-form-item-control-input {
+        height: 45px;
+    }
+}

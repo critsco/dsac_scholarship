@@ -1,0 +1,42 @@
+.ant-popover {
+    &.ant-popconfirm {
+        .ant-popover-content {
+            .ant-popover-inner {
+                border-radius: 0px;
+
+                .ant-popover-inner-content {
+                    .ant-popconfirm-inner-content {
+                        .ant-popconfirm-buttons {
+                            .ant-btn {
+                                &.ant-btn-default {
+                                    &:hover {
+                                        color: $mainPrimary;
+                                        border-color: $mainPrimary;
+                                    }
+
+                                    &:focus {
+                                        color: $mainPrimary;
+                                        border-color: $mainPrimary;
+                                    }
+                                }
+
+                                &.ant-btn-primary {
+                                    border-color: #e4151f;
+                                    background-color: #e4151f;
+
+                                    &:hover {
+                                        opacity: 0.8;
+                                    }
+
+                                    &:focus {
+                                        opacity: 0.8;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

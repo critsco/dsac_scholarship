@@ -1,0 +1,62 @@
+.public-layout {
+	min-height: 100vh;
+
+	// > .ant-layout-content {
+	// }
+}
+
+.notification-notice {
+	background: white;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	/* width: 390px; */
+	z-index: 9999999;
+	padding: 15px 17px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.47);
+	-moz-box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.47);
+	box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.47);
+
+	.notification-notice-content {
+		display: flex;
+		gap: 8px;
+
+		.notification-notice-message {
+			display: flex;
+			flex-direction: column;
+
+			.title {
+				font-size: 18;
+				font-weight: 700;
+			}
+
+			.description {
+				font-size: 14;
+			}
+
+			.action {
+				margin-top: 10px;
+
+				.ant-btn {
+					background-color: $mainSecondary;
+					color: $mainSecondaryText;
+
+					&:hover {
+						border-color: $mainSecondary;
+					}
+
+					svg {
+						margin-right: 5px;
+					}
+				}
+			}
+		}
+
+		.notification-notice-icon {
+			svg {
+				font-size: 40px;
+			}
+		}
+	}
+}

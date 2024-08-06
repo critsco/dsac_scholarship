@@ -1,0 +1,523 @@
+.ant-btn {
+    line-height: normal;
+    border-radius: 20px !important;
+    height: 40px;
+
+    &.ant-btn-sm {
+        height: 35px;
+        padding: 0px 10px;
+    }
+
+    &.ant-btn-lg {
+        height: 45px;
+    }
+
+    &.btn-main-primary {
+        color: $mainPrimaryText !important;
+        background-color: $mainPrimary !important;
+        border-color: $mainPrimary !important;
+
+        &:hover {
+            color: $mainPrimaryTextActive !important;
+            background-color: $mainPrimaryActive !important;
+            border-color: $mainPrimary !important;
+        }
+
+        &:focus {
+            color: $mainPrimaryTextActive !important;
+            background-color: $mainPrimaryActive !important;
+            border-color: $mainPrimary !important;
+        }
+
+        &.outlined {
+            color: $mainPrimaryTextActive !important;
+            background-color: $mainPrimaryActive !important;
+            border-color: $mainPrimary !important;
+
+            &:hover {
+                color: $mainPrimaryText !important;
+                background-color: $mainPrimary !important;
+                border-color: $mainPrimary !important;
+            }
+
+            &:focus {
+                color: $mainPrimaryText !important;
+                background-color: $mainPrimary !important;
+                border-color: $mainPrimary !important;
+            }
+        }
+
+        &.active {
+            color: $mainPrimaryText !important;
+            background-color: $mainPrimary !important;
+            border-color: $mainPrimary !important;
+        }
+
+        &:disabled {
+            border-color: #d9d9d9 !important;
+            color: rgba(0, 0, 0, 0.25) !important;
+            background-color: rgba(0, 0, 0, 0.04) !important;
+        }
+    }
+
+    &.btn-main-secondary {
+        color: $mainSecondaryText !important;
+        background-color: $mainSecondary !important;
+        border-color: $mainSecondary !important;
+
+        &:hover {
+            color: $mainSecondaryTextActive !important;
+            background-color: $mainSecondaryActive !important;
+            border-color: $mainSecondary !important;
+        }
+
+        &:focus {
+            color: $mainSecondaryTextActive !important;
+            background-color: $mainSecondaryActive !important;
+            border-color: $mainSecondary !important;
+        }
+
+        &.outlined {
+            color: $mainSecondaryTextActive !important;
+            background-color: $mainSecondaryActive !important;
+            border-color: $mainSecondary !important;
+
+            &:hover {
+                color: $mainSecondaryText !important;
+                background-color: $mainSecondary !important;
+                border-color: $mainSecondary !important;
+            }
+
+            &:focus {
+                color: $mainSecondaryText !important;
+                background-color: $mainSecondary !important;
+                border-color: $mainSecondary !important;
+            }
+        }
+
+        &.active {
+            color: $mainSecondaryText !important;
+            background-color: $mainPrimary !important;
+            border-color: $mainPrimary !important;
+        }
+
+        &:disabled {
+            border-color: #d9d9d9 !important;
+            color: rgba(0, 0, 0, 0.25) !important;
+            background-color: rgba(0, 0, 0, 0.04) !important;
+        }
+    }
+
+    // primary
+    &.btn-primary {
+        color: #ffffff;
+        background-color: $primary;
+        border-color: $primary;
+
+        &:hover {
+            color: #ffffff;
+            background-color: $primaryActive;
+            border-color: $primaryActive;
+        }
+
+        &:focus {
+            color: #ffffff;
+            background-color: $primaryActive;
+            border-color: $primaryActive;
+        }
+
+        &.active {
+            color: #ffffff;
+            background-color: $primary;
+            border-color: $primary;
+        }
+    }
+
+    // secondary
+    &.btn-secondary {
+        color: #ffffff;
+        background-color: $secondary;
+        border-color: $secondary;
+
+        &:hover {
+            color: #ffffff;
+            background-color: $secondaryActive;
+            border-color: $secondaryActive;
+        }
+
+        &:focus {
+            color: #ffffff;
+            background-color: $secondaryActive;
+            border-color: $secondaryActive;
+        }
+
+        &.active {
+            color: #ffffff;
+            background-color: $secondary;
+            border-color: $secondary;
+        }
+    }
+
+    // success
+    &.btn-success {
+        color: #ffffff;
+        background-color: $success;
+        border-color: $success;
+
+        &:hover {
+            color: #ffffff;
+            background-color: $successActive;
+            border-color: $successActive;
+        }
+
+        &:focus {
+            color: #ffffff;
+            background-color: $successActive;
+            border-color: $successActive;
+        }
+
+        &.active {
+            color: #ffffff;
+            background-color: $success;
+            border-color: $success;
+        }
+    }
+
+    // warning
+    &.btn-warning {
+        color: #ffffff;
+        background-color: $warning;
+        border-color: $warning;
+
+        &:hover {
+            color: #ffffff;
+            background-color: $warningActive;
+            border-color: $warningActive;
+        }
+
+        &:focus {
+            color: #ffffff;
+            background-color: $warningActive;
+            border-color: $warningActive;
+        }
+
+        &.active {
+            color: #ffffff;
+            background-color: $warning;
+            border-color: $warning;
+        }
+    }
+
+    // danger
+    &.btn-danger {
+        color: #ffffff;
+        background-color: $danger;
+        border-color: $danger;
+
+        &:hover {
+            color: #ffffff;
+            background-color: $dangerActive;
+            border-color: $dangerActive;
+        }
+
+        &:focus {
+            color: #ffffff;
+            background-color: $dangerActive;
+            border-color: $dangerActive;
+        }
+
+        &.active {
+            color: #ffffff;
+            background-color: $danger;
+            border-color: $danger;
+        }
+    }
+
+    // info
+    &.btn-info {
+        color: #ffffff;
+        background-color: $info;
+        border-color: $info;
+
+        &:hover {
+            color: #ffffff;
+            background-color: $infoActive;
+            border-color: $infoActive;
+        }
+
+        &:focus {
+            color: #ffffff;
+            background-color: $infoActive;
+            border-color: $infoActive;
+        }
+
+        &.active {
+            color: #ffffff;
+            background-color: $info;
+            border-color: $info;
+        }
+    }
+
+    // indigo
+    &.btn-indigo {
+        color: #ffffff;
+        background-color: $indigo;
+        border-color: $indigo;
+
+        &:hover {
+            color: #ffffff;
+            background-color: $indigoActive;
+            border-color: $indigoActive;
+        }
+
+        &:focus {
+            color: #ffffff;
+            background-color: $indigoActive;
+            border-color: $indigoActive;
+        }
+
+        &.active {
+            color: #ffffff;
+            background-color: $indigo;
+            border-color: $indigo;
+        }
+    }
+
+    // purple
+    &.btn-purple {
+        color: #ffffff;
+        background-color: $purple;
+        border-color: $purple;
+
+        &:hover {
+            color: #ffffff;
+            background-color: $purpleActive;
+            border-color: $purpleActive;
+        }
+
+        &:focus {
+            color: #ffffff;
+            background-color: $purpleActive;
+            border-color: $purpleActive;
+        }
+
+        &.active {
+            color: #ffffff;
+            background-color: $purple;
+            border-color: $purple;
+        }
+    }
+
+    // pink
+    &.btn-pink {
+        color: #ffffff;
+        background-color: $pink;
+        border-color: $pink;
+
+        &:hover {
+            color: #ffffff;
+            background-color: $pinkActive;
+            border-color: $pinkActive;
+        }
+
+        &:focus {
+            color: #ffffff;
+            background-color: $pinkActive;
+            border-color: $pinkActive;
+        }
+
+        &.active {
+            color: #ffffff;
+            background-color: $pink;
+            border-color: $pink;
+        }
+    }
+
+    // teal
+    &.btn-teal {
+        color: #ffffff;
+        background-color: $teal;
+        border-color: $teal;
+
+        &:hover {
+            color: #ffffff;
+            background-color: $tealActive;
+            border-color: $tealActive;
+        }
+
+        &:focus {
+            color: #ffffff;
+            background-color: $tealActive;
+            border-color: $tealActive;
+        }
+
+        &.active {
+            color: #ffffff;
+            background-color: $teal;
+            border-color: $teal;
+        }
+    }
+
+    // dark
+    &.btn-dark {
+        color: #ffffff;
+        background-color: #000000;
+        border-color: #000000;
+
+        &:hover {
+            color: #ffffff;
+            background-color: $darkActive;
+            border-color: $darkActive;
+        }
+
+        &:focus {
+            color: #ffffff;
+            background-color: $darkActive;
+            border-color: $darkActive;
+        }
+
+        &.active {
+            color: #ffffff;
+            background-color: #000000;
+            border-color: #000000;
+        }
+    }
+
+    // link
+    &.ant-btn-link {
+        &.btn-main-primary {
+            color: $mainPrimary !important;
+            background-color: transparent !important;
+            border: 0px;
+
+            &:hover {
+                color: $mainPrimary;
+            }
+
+            &:focus {
+                color: $mainPrimary;
+            }
+        }
+
+        &.btn-delete {
+            color: #e4151f !important;
+
+            &:hover {
+                color: #e4151f !important;
+            }
+
+            &:focus {
+                color: #e4151f !important;
+            }
+        }
+
+        &.btn-add {
+            color: $mainPrimary !important;
+
+            &:hover {
+                color: $mainPrimary !important;
+            }
+
+            &:focus {
+                color: $mainPrimary !important;
+            }
+        }
+
+        &.btn-drag {
+            color: $secondary !important;
+
+            &:hover {
+                color: $secondary !important;
+            }
+
+            &:focus {
+                color: $secondary !important;
+            }
+        }
+
+        &.btn-disabled {
+            color: #212529;
+
+            &:hover {
+                color: #212529;
+            }
+
+            &:focus {
+                color: #212529;
+            }
+        }
+
+        &.btn-info {
+            color: $info !important;
+            background-color: transparent;
+            border: 0px;
+
+            &:hover {
+                color: $info !important;
+            }
+
+            &:focus {
+                color: $info !important;
+            }
+        }
+    }
+    &.ant-btn-dashed {
+        &.btn-main-primary {
+            color: $mainPrimary;
+            background-color: transparent;
+            border-color: $mainPrimary;
+
+            &:hover {
+                color: $mainPrimary;
+                border-color: $mainPrimary;
+            }
+
+            &:focus {
+                color: $mainPrimary;
+                border-color: $mainPrimary;
+            }
+        }
+
+        &.btn-delete {
+            color: #e4151f !important;
+
+            &:hover {
+                color: #e4151f !important;
+                border-color: #e4151f !important;
+            }
+
+            &:focus {
+                color: #e4151f !important;
+                border-color: #e4151f !important;
+            }
+        }
+
+        &.btn-add {
+            color: $mainPrimary !important;
+
+            &:hover {
+                color: $mainPrimary !important;
+                border-color: $mainPrimary !important;
+            }
+
+            &:focus {
+                color: $mainPrimary !important;
+                border-color: $mainPrimary !important;
+            }
+        }
+
+        &.btn-drag {
+            color: $secondary !important;
+
+            &:hover {
+                color: $secondary !important;
+                border-color: $secondary !important;
+            }
+
+            &:focus {
+                color: $secondary !important;
+                border-color: $secondary !important;
+            }
+        }
+    }
+}

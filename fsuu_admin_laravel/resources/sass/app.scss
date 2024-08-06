@@ -1,0 +1,40 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+@import "./ui/mixin/mixin";
+
+@import "./ui/input/input";
+@import "./ui/button/button";
+@import "./ui/radio/radio";
+@import "./ui/alert/alert";
+@import "./ui/collapse/collapse";
+@import "./ui/card/card";
+@import "./ui/table/table";
+@import "./ui/tab/tab";
+@import "./ui/modal/modal";
+@import "./ui/popover/popover";
+@import "./ui/notification/notification";
+@import "./ui/checkbox/checkbox";
+@import "./ui/form/form";
+@import "./ui/quill/quill";
+@import "./ui/private-layout/private-layout";
+@import "./ui/header/header";
+@import "./ui/sidemenu/sidemenu";
+
+@import "./ui/colors/colors";
+@import "./ui/helper/helper";
+
+@import "./pages/page_login/page_login";
+@import "./pages/page_edit_profile/page_edit_profile";
+@import "./pages/page_permission/page_permission";
+@import "./pages/page_users/page_users";
+@import "./pages/page_edit_profile/page_edit_profile";
+@import "./pages/page_student/page_student";
+
+@import "./pages/page_email_template/page_email_template";

@@ -1,0 +1,262 @@
+.private-layout {
+    > .ant-layout-sider {
+        background-color: $sideBarBackground;
+        width: 240px !important;
+        max-width: 240px !important;
+        overflow: hidden auto;
+        position: fixed;
+        height: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 6;
+
+        // box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+        // -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+        // -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+
+        $scrollbar-2-thumb-width: 5px;
+        $scrollbar-2-thumb-color: $sideBarThumbColor;
+        $scrollbar-2-track-color: $sideBarTrackColor;
+
+        // Chrome & Opera
+        &::-webkit-scrollbar {
+            width: $scrollbar-2-thumb-width;
+            height: $scrollbar-2-thumb-width;
+
+            &-track {
+                background-color: $scrollbar-2-track-color;
+            }
+
+            &-thumb {
+                background-color: $scrollbar-2-thumb-color;
+            }
+
+            &-track,
+            &-thumb {
+                border-radius: 5px;
+            }
+        }
+
+        // Firefox
+        scrollbar-width: thin;
+        scrollbar-color: $scrollbar-2-thumb-color $scrollbar-2-track-color;
+
+        &.ant-layout-sider-collapsed {
+            width: 0px !important;
+            min-width: 55px !important;
+
+            @include atsm {
+                display: none;
+            }
+
+            @include atxs {
+                display: none;
+            }
+        }
+
+        @include atsm {
+            position: fixed;
+        }
+
+        @include atxs {
+            position: fixed;
+        }
+
+        > .ant-layout-sider-children {
+            > .ant-side-header {
+                width: 100%;
+                height: 100px;
+                display: flex;
+                justify-content: space-between;
+                padding: 0px 15px;
+                align-items: center;
+                gap: 10px;
+
+                @include atsm {
+                    height: 70px;
+                }
+
+                @include atxs {
+                    height: 70px;
+                }
+
+                .anticon {
+                    font-size: 22px;
+                    color: $sideBarIconColor;
+
+                    &:hover {
+                        color: $sideBarIconColorActive;
+                    }
+                }
+
+                .logo_wrapper {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        width: 150px;
+
+                        @include atsm {
+                            width: 105px;
+                        }
+
+                        @include atxs {
+                            width: 105px;
+                        }
+                    }
+                }
+            }
+
+            > .ant-menu {
+                background-color: $sideBarBackground;
+
+                > .ant-menu-item {
+                    background-color: $sideBarBackground;
+                    margin-block: 0px;
+                    margin-inline: 0px;
+                    width: 100%;
+                    border-radius: 0px;
+                    padding-left: 16px !important;
+                    line-height: 45px;
+
+                    &.ant-menu-item-selected,
+                    &.ant-menu-item-active {
+                        background: $sideBarBackgroundSelectedMenu;
+                    }
+
+                    a {
+                        color: #ffffff;
+                        text-decoration: none;
+                    }
+
+                    a:hover,
+                    &.ant-menu-item-selected a,
+                    &.ant-menu-item-active a {
+                        color: $sideBarTextColorActive;
+                        text-decoration: none;
+                    }
+
+                    .ant-menu-item-icon {
+                        color: $sideBarIconColor;
+                        font-size: 18px;
+                        width: 20px;
+                    }
+                }
+
+                .ant-menu-submenu-selected {
+                    background: $sideBarBackgroundSelectedMenu;
+                }
+
+                > .ant-menu-submenu {
+                    background-color: transparent;
+                    border-radius: 0px;
+
+                    .ant-menu-submenu-title {
+                        padding-left: 16px !important;
+                        padding-inline-end: 0px !important;
+                        margin-inline: 0px;
+                        margin-block: 0px;
+                        line-height: 45px;
+                        width: 100%;
+
+                        .ant-menu-submenu-arrow,
+                        .ant-menu-item-icon {
+                            color: $sideBarIconColor;
+                            font-size: 18px;
+                        }
+
+                        .ant-menu-item-icon {
+                            width: 20px;
+                        }
+
+                        &:active {
+                            background-color: transparent;
+                        }
+
+                        .ant-menu-title-content {
+                            color: $sideBarTextColorActive;
+                        }
+                    }
+
+                    &.ant-menu-submenu-active {
+                        background: $sideBarBackgroundSelectedMenu;
+                    }
+
+                    .ant-menu.ant-menu-sub {
+                        > .ant-menu-item {
+                            // background-color: $sideBarBackground;
+                            margin-block: 0px;
+                            margin-inline: 0px;
+                            width: 100%;
+                            border-radius: 0px;
+                            padding-left: 46px !important;
+                            line-height: 45px;
+
+                            &.ant-menu-item-selected,
+                            &.ant-menu-item-active {
+                                background: $sideBarBackgroundSelectedMenu;
+                            }
+
+                            a {
+                                color: #ffffff;
+                            }
+
+                            a:hover,
+                            &.ant-menu-item-selected a,
+                            &.ant-menu-item-active a {
+                                color: $sideBarTextColorActive;
+                            }
+
+                            .ant-menu-title-content {
+                                line-height: 40px;
+                                a {
+                                    text-decoration: none !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ant-menu-submenu-placement-rightTop,
+.ant-menu-submenu-placement-rightBottom {
+    padding-inline-start: 0px !important;
+}
+
+.ant-menu-submenu-popup > .ant-menu {
+    .ant-menu-item:hover {
+        background-color: $submenu-default-hover !important;
+        color: #ffffff !important;
+    }
+    > .ant-menu-item-selected {
+        background-color: $submenu-default-selected !important;
+        color: #ffffff !important;
+    }
+}
+
+.ant-menu.ant-menu-submenu > .ant-menu {
+    background-color: $submenu-default !important;
+    color: #ffffff !important;
+    border-bottom-left-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+
+    .ant-menu-item .ant-menu-title-content {
+        padding-top: 5px;
+        a {
+            text-decoration: none !important;
+        }
+    }
+}
+
+.ant-tooltip .ant-tooltip-content .ant-tooltip-inner {
+    background-color: $submenu-default;
+    color: #ffffff !important;
+    a {
+        text-decoration: none;
+    }
+}

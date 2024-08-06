@@ -1,0 +1,12 @@
+#Page404 {
+	background-color: $layoutBackground;
+	position: relative;
+	overflow: hidden;
+	min-height: 100vh;
+
+	> .ant-layout-content {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}

@@ -1,0 +1,43 @@
+#PageRegistration {
+    .ant-layout-content {
+        .container {
+            .right {
+                .academic-content {
+                    padding-left: 15px;
+
+                    .second-courses-wrapper {
+                        .sub-title {
+                            display: flex;
+                            padding: 0px !important;
+                        }
+
+                        .degree-select {
+                            .ant-checkbox-group {
+                                gap: 180px;
+                            }
+                        }
+
+                        .working-select {
+                            .ant-checkbox-group {
+                                gap: 214px;
+                            }
+                        }
+                    }
+
+                    .school-wrapper,
+                    .accepted-wrapper,
+                    .attended-wrapper {
+                        display: flex;
+                    }
+
+                    .accepted-wrapper,
+                    .attended-wrapper {
+                        .ant-checkbox-group {
+                            gap: 135px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
